@@ -102,8 +102,13 @@ Use the getInningScore() function below to do the following:
   1. Receive a callback function - you will pass in the inning function from task 2 as your argument 
   2. Return an object with a score for home and a score for away that populates from invoking the inning callback function */
 
-function getInningScore(/*Your Code Here */) {
-  /*Your Code Here */
+function getInningScore() {
+  let topInning = inning();
+    let bottomInning = inning();
+    let score ={}
+    score.Home = score.Home += topInning;
+    score.Away = score.Away += bottomInning;
+    return score;
 }
 
 /* ⚾️⚾️⚾️ Task 5: scoreboard() ⚾️⚾️⚾️
