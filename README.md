@@ -43,6 +43,7 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+  Closure is a point that can modify or use content outside its scope or area of code.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,8 +65,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+  the return function()is a closure. returning a function that normaly would be scoped within its container allows it to be used outside its scope.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  the number changes due to the math.random (.floor would make it 0-5 methinks) but since using dansRoll always inputs dan only the number changes.
 c. What is the lexical scope of `newRoll`? 
+  Locally scoped cannot be accesed outside the containing {}.
 
 
 ### Task 3 - Stretch Goals
